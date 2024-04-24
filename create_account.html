@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création de compte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Création de compte</h1>
+    <form action="register.php" method="post">
+        <input type="text" name="nom" placeholder="Nom" required><br>
+        <input type="text" name="prenom" placeholder="Prénom" required><br>
+        <input type="email" name="email" placeholder="Adresse email" required><br>
+        <input type="tel" name="telephone" placeholder="Numéro de téléphone" required><br>
+        <input type="password" name="mot_de_passe" placeholder="Mot de passe" required><br>
+        <button type="submit">S'inscrire</button>
+    </form>
+    <div id="google-signin-btn" onclick="signInWithGoogle()">
+        <img src="google-logo.png" alt="Google logo">
+        <span>S'inscrire avec Google</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
