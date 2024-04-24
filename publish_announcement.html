@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publication d'annonces</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Publication d'annonces</h1>
+    <form action="publish_announcement.php" method="post">
+        <input type="email" name="email" placeholder="Adresse email" required><br>
+        <input type="password" name="mot_de_passe" placeholder="Mot de passe" required><br>
+        <textarea name="titre" placeholder="Titre de l'annonce" required></textarea><br>
+        <textarea name="contenu" placeholder="Saisissez votre annonce ici" required></textarea><br>
+        <button type="submit">Publier l'annonce</button>
+    </form>
+</body>
+</html>
